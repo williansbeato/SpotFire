@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="800.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.WindowsControle">
+    <children>
+        <BorderPane>
+            <center>
+
+            </center>
+            <top>
+                <VBox>
+                    <Separator prefHeight="38.0" prefWidth="800.0" visible="false" />
+                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                        <children>
+                            <Label contentDisplay="CENTER" text="Bem-Vindo" textAlignment="CENTER" />
+                            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="17.0" visible="false" />
+                            <TextField prefHeight="26.0" prefWidth="585.0" />
+                            <Separator layoutX="52.0" layoutY="10.0" orientation="VERTICAL" prefHeight="100.0" prefWidth="17.0" visible="false" />
+                            <Button mnemonicParsing="false" text="Pesquisar" />
+                        </children>
+                    </HBox>
+                </VBox>
+            </top>
+            <center>
+
+            </center>
+            <center>
+                <AnchorPane fx:id="conteudoCentro" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                            <tabs>
+                                <Tab text="Artista/Banda">
+                                    <content>
+                                        <VBox alignment="CENTER" prefHeight="558.0" prefWidth="800.0">
+                                            <children>
+                                                <Separator prefWidth="200.0" visible="false" />
+                                                <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="789.0" text="Novo Artista/Banda" />
+                                                <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" visible="false" />
+                                                <ListView prefHeight="568.0" prefWidth="800.0" />
+                                            </children></VBox>
+                                    </content>
+                                </Tab>
+                                <Tab text="Itens">
+                                    <content>
+                                        <VBox alignment="CENTER" prefHeight="558.0" prefWidth="800.0">
+                                            <children>
+                                                <Separator prefWidth="200.0" visible="false" />
+                                                <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="789.0" text="Novo Item" />
+                                                <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" visible="false" />
+                                                <ListView fx:id="ltvItens" prefHeight="568.0" prefWidth="800.0" />
+                                            </children></VBox>
+                                    </content>
+                                </Tab>
+                                <Tab text="Álbuns">
+                                    <content>
+                                        <VBox alignment="CENTER" prefHeight="558.0" prefWidth="800.0">
+                                            <children>
+                                                <Separator prefWidth="200.0" visible="false" />
+                                                <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="789.0" text="Novo Álbum" />
+                                                <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" visible="false" />
+                                                <ListView fx:id="ltvAlbuns" prefHeight="568.0" prefWidth="800.0" />
+                                            </children></VBox>
+                                    </content>
+                                </Tab>
+                                <Tab text="Músicas">
+                                    <content>
+                                        <VBox alignment="CENTER" prefHeight="558.0" prefWidth="800.0">
+                                            <children>
+                                                <Separator prefWidth="200.0" visible="false" />
+                                                <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="789.0" text="Nova música" />
+                                                <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" visible="false" />
+                                                <ListView fx:id="ltvMusicas" prefHeight="568.0" prefWidth="800.0" />
+                                            </children></VBox>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
